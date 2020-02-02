@@ -2,25 +2,26 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Javascript: Local Storage</title>
+  <title>Javascript: use Local Storage to store input</title>
   <style>
+    body {
+      font: 1em Arial, Helvetica, sans-serif;
+    }
     #get-name {
       background: #eee;
       padding: 0.5em;
     }
-    h1 {
-      background: #333;
-      color: #eee;
-      padding-left: 0.25em
+    input {
+      font-size: inherit;
     }
   </style>
 </head>
 <body>
   <h1>Hello <span id="my-name"></span>!</h1>
 
-  <form id="get-name" action="#" method="post">
-    <label for="user-name">Enter name:</label>
-    <input type="text" id="user-name" placeholder="Your name?">
+  <form id="getName" action="#" method="post">
+    <label for="userName">Enter name:</label>
+    <input type="text" id="userName" placeholder="Your name?">
     <input type="submit">
   </form>
 
