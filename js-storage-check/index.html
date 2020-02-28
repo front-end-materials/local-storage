@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript browser storage limit check</title>
+  <style>
+    body { font: 1.25em Arial, Helvetica, sans-serif; }
+    code { font-size: 1.25em; color: rgb(70, 130, 180); }
+  </style>
+</head>
+<body>
+  <h1>This page checks localStorage</h1>
+
+  <p>
+    <code>StorageManager</code> says you're currently using about <strong id="percent">
+    </strong>% of your available storage.
+  </p>
+  
+  <p><small>
+    NOTE: The <code>StorageManager</code> API is still experimental—<a href="https://caniuse.com/#search=StorageManager">check browser support</a>) before using in production (<code>Safari === new(IE)</code>).
+  </small></p>
+
+  <script src="js/checkstorage.js"></script>
+</body>
+</html>
