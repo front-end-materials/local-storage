@@ -1,6 +1,6 @@
 "use strict";
 /*
-  this version uses console.log() statements (with shortcut 'print', line 7)
+  this version uses console.log() statements with shortcut 'print', below,
   to track how the JavaScript is working, and has some explanatory comments.
   For the essential code only, open get-min.js
 */
