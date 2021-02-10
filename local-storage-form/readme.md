@@ -4,9 +4,9 @@ You can [view this page here](https://front-end-materials.github.io/local-storag
 
 This demo uses JavaScript and localstorage to retain some data between sessions, so the data remains stored in the browser after users close the browser window.
 
-## Security warning in the error console
+## Security warning in the error console?
 
-For this to work as expected you need to *run the file on a server* (e.g.GitHub pages) or from a *local server* (e.g. with Node installed [`node http-server`](https://www.npmjs.com/package/http-server)).
+**Note:** this example needs to run on a server (VSCode has a "Go Live" button, bottom right) or view on GitHub pages.
 
 ## References
 
