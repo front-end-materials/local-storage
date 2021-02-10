@@ -1,6 +1,6 @@
 "use strict";
 
-// A simple array ---------------------------------
+// A simple array of the names --------------------
 let getFirstNames = localStorage.getItem("localStorageNames").split(',');
 
 
@@ -15,7 +15,10 @@ const contactDetails = document.getElementById("contacts");
 let getContacts = JSON.parse(localStorage.getItem("localStoragecontacts"));
 
 function parseContact(item) {
-  let contact = `<li>${item.firstName} ${item.secondName}, email: ${item.email}</li>`;
+  let contact = `
+  <li>
+    <strong>${item.firstName} ${item.secondName}</strong>, email: <a href="mailto:${item.email}">${item.email}</a>
+  </li>`;
   return contact;
 }
 

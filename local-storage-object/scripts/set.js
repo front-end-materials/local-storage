@@ -11,7 +11,7 @@ const print = (content) => console.log(content);
 // adds a visual divider in the browser console
 print('A simple array ---------------------------------');
 
-const names = ['salimah','dave','fania'];
+const names = ['thom', 'salimah', 'dave', 'fania'];
 // before setting, you could check the items exist in locaStorage:
 // if (!localStorage.getItem("localStorageNames")){ --line 17 here-- }
 localStorage.setItem("localStorageNames", names);
@@ -24,6 +24,7 @@ print(getFirstNames[1]);
 print('\n\nJSON format: an array of objects --------------');
 
 const fullNames = [
+  {thom: 'Thom Corah'},
   {salimah: 'Salimah Mohamed'},
   {dave: 'Dave Everitt'},
   {fania: 'Fania Raczinski'}
@@ -32,13 +33,18 @@ localStorage.setItem("localStoragefullNames", JSON.stringify(fullNames));
 let getFullNames = JSON.parse(localStorage.getItem("localStoragefullNames"));
 
 print(getFullNames);
-print(getFullNames[0].salimah);
+print(getFullNames[0].thom);
 
 
 
 print('\n\nJSON format: an array of nested objects--------');
       
 const contacts = [
+  {
+    firstName: 'Thom',
+    secondName: 'Corah',
+    email: 'tcorah@dmu.ac.uk'
+  },
   {
     firstName: 'Fania',
     secondName: 'Raczinski',
@@ -52,7 +58,7 @@ const contacts = [
   {
     firstName: 'Dave',
     secondName: 'Everitt',
-    email: 'deveritt@dmu.ac.uk'
+    email: 'dave.everitt@dmu.ac.uk'
   }
 ]
 localStorage.setItem("localStoragecontacts", JSON.stringify(contacts));

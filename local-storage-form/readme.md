@@ -1,12 +1,12 @@
 # A simple introduction to JavaScript and Local Storage
 
-You can [view this page here](https://front-end-materials.github.io/local-storage/js-local-storage-form/).
+You can [view this page here](https://front-end-materials.github.io/local-storage/local-storage-form/).
 
 This demo uses JavaScript and localstorage to retain some data between sessions, so the data remains stored in the browser after users close the browser window.
 
 ## Security warning in the error console
 
-You need to *run the file on GitHub pages* or from a *local server* (e.g. with Node installed [`node http-server`](https://www.npmjs.com/package/http-server)) it will work as expected.
+For this to work as expected you need to *run the file on a server* (e.g.GitHub pages) or from a *local server* (e.g. with Node installed [`node http-server`](https://www.npmjs.com/package/http-server)).
 
 ## References
 
